@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:id="@+id/id_settings_ly">
+    
+    <View android:layout_width="wrap_content"
+        android:layout_height="50dp"/>
+    
+    <com.smartdevice.ui.CustLinearView
+        android:id="@+id/id_settings_msg_push"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        custom:titleTxt="@string/message_push"
+        custom:indicatorVisible="VISIBLE"
+        custom:indicator="@drawable/icon_switch_on">
+    </com.smartdevice.ui.CustLinearView>
+    
+    <com.smartdevice.ui.CustLinearView
+        android:id="@+id/id_settings_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        custom:titleTxt="@string/check_update">
+    </com.smartdevice.ui.CustLinearView>
+    
+    <com.smartdevice.ui.CustLinearView
+        android:id="@+id/id_settings_about_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        custom:titleTxt="@string/about_us">
+    </com.smartdevice.ui.CustLinearView>
+    
+</LinearLayout>

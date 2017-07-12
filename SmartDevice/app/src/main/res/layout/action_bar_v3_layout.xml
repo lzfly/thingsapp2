@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:gravity="center_vertical"
+    android:background="@color/main_dark_turquoise_bg">
+    
+    <TextView
+        android:id="@+id/id_actionbar_v3_icon" 
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical"
+        android:text="@string/unknown_str"
+        />
+    
+    <TextView 
+        android:id="@+id/id_actionbar_v3_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="@string/unknown_str"
+        android:visibility="visible"
+        android:layout_centerHorizontal="true"
+        />
+    
+    <TextView 
+        android:id="@+id/id_actionbar_v3_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:text="@string/unknown_str"
+        android:paddingRight="10dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

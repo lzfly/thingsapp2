@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/mist_white">
+  <item>
+    <shape android:shape="rectangle">
+      <solid android:color="@color/main_dark_turquoise_bg" />
+      <corners android:bottomRightRadius="30dp" android:topRightRadius="30dp"/>
+    </shape>
+  </item>
+  <item android:drawable="@drawable/actionbar_back_shape" />
+</ripple>

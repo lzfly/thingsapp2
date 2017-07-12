@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:id="@+id/id_red_hint_ly">
+    
+   <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_host_img_view"
+        android:src="@drawable/icon_msg"/>
+    
+    <TextView 
+        android:id="@+id/id_hint_nunber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/red_hint_no"
+        android:textColor="@color/white"
+        android:textSize="@dimen/red_hint_no_text_size"
+        android:gravity="center"
+        android:layout_gravity="right"
+        android:background="@drawable/red_hint_shape"/>
+
+</FrameLayout>

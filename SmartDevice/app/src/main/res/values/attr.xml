@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="switch_view_style">
+        <attr name="down_background" format="reference"></attr> 
+        <attr name="up_backgroud" format="reference"></attr>
+        <attr name="main_width" format="dimension"></attr>
+        <attr name="main_height" format="dimension"></attr>
+        <attr name="flip_width" format="dimension"></attr>
+        <attr name="flip_height" format="dimension"></attr>
+    </declare-styleable>
+    
+    <declare-styleable name="MessageView">
+        <attr name="iconDrawble" format="reference"></attr>
+        <attr name="titleText" format="reference|string"></attr>
+        <attr name="dateText" format="string"></attr>
+        <attr name="contentText" format="string"></attr>
+    </declare-styleable>
+    
+    <declare-styleable name="CustLinearView">
+        <attr name="iconImage" format="reference"></attr>
+        <attr name="iconVisible" format="enum">
+            <enum name="GONE" value="0x00000008"></enum>
+            <enum name="VISIBLE" value="0x00000000"></enum>
+            <enum name="INVISIBLE" value="0x00000004"></enum>
+        </attr>
+        <attr name="titleTxt" format="reference|string"></attr>
+        <attr name="content" format="reference|string"></attr>
+        <attr name="contentVisible" format="enum">
+            <enum name="GONE" value="0x00000008"></enum>
+            <enum name="VISIBLE" value="0x00000000"></enum>
+            <enum name="INVISIBLE" value="0x00000004"></enum>
+        </attr>
+        <attr name="indicator" format="reference"></attr>
+        <attr name="indicatorVisible" format="enum">
+            <enum name="GONE" value="0x00000008"></enum>
+            <enum name="VISIBLE" value="0x00000000"></enum>
+            <enum name="INVISIBLE" value="0x00000004"></enum>
+        </attr>
+    </declare-styleable>
+    
+</resources>

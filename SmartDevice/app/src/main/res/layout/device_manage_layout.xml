@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_device_manage_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="horizontal"
+    android:baselineAligned="false">
+        
+        <LinearLayout 
+            android:id="@+id/id_device_type_menu"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_weight="3"
+            >
+            <TextView 
+                android:id="@+id/id_device_typelist_txt"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="@string/device_type_str"
+                android:layout_gravity="top|center"
+                android:gravity="center"
+                style="@style/device_manage_menu_style"/>
+
+            <ListView
+                android:id="@+id/id_devicelist_types"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" 
+                android:choiceMode="singleChoice"
+                android:drawSelectorOnTop="false"
+                android:cacheColorHint="#00000000" 
+                android:listSelector="@drawable/dev_type_list_selector">
+            </ListView>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:id="@+id/id_device_control"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1">
+            
+            <TextView 
+                android:id="@+id/id_devicelist_txt"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="@string/device_str"
+                android:layout_gravity="top|center"
+                android:gravity="center"
+                style="@style/device_manage_menu_style"/>
+            
+            <LinearLayout
+                android:id="@+id/id_devicelist_container"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            
+        </LinearLayout>
+        
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<TextView 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:textSize="15sp"
+    android:textColor="@color/light_gray_20"
+    android:text="@string/link_device_set_trigger"/>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:background="@color/white"
+    android:paddingLeft="5dp"
+    android:id="@+id/id_trigger_attr_set_ly">
+    <TextView 
+        android:id="@+id/id_trigger_attr_set_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:textSize="15sp"
+        android:text="@string/unknown_str"/>
+    
+    <LinearLayout 
+        android:id="@+id/id_trigger_attr_set_operator_ly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="2"
+        android:paddingRight="20dp"
+        android:orientation="vertical" />
+        
+     <LinearLayout 
+        android:id="@+id/id_trigger_attr_set_value_ly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="2"
+        android:paddingRight="10dp"
+        android:orientation="vertical">
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

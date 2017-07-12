@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:custom="http://schemas.android.com/apk/res/com.smartdevice.main"
+    android:id="@+id/id_bottom_navigation"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    
+    <View 
+        android:id="@+id/id_seporator_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/light_gray"/>
+    <LinearLayout 
+        android:id="@+id/id_bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+        android:id="@+id/id_home_nav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/bottom_navigation_margin"
+        android:drawableTop="@drawable/icon_home_selected"
+        style="@style/bottom_navigation_style"
+        android:text="@string/nav_device_str" />
+    
+    <TextView
+        android:id="@+id/id_senerio_nav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/icon_senerio"
+        style="@style/bottom_navigation_style"
+        android:text="@string/nav_senerio_str" />
+        
+    <LinearLayout 
+         android:id="@+id/id_msg_nav"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:padding="4dp"
+         android:clickable="true"
+         android:orientation="vertical">
+    <com.smartdevice.ui.RedHintView
+        android:id="@+id/id_msg_nav_hint" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+       />
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:layout_gravity="bottom"
+        android:text="@string/msg_str"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/id_info_nav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/bottom_navigation_margin"
+        style="@style/bottom_navigation_style"
+        android:drawableTop="@drawable/icon_info"
+        android:text="@string/info_str" />
+    </LinearLayout>
+    
+
+</RelativeLayout>

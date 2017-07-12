@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+       android:id="@+id/id_add_room"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       android:orientation="vertical"
+       android:paddingTop="5dp"
+       android:paddingBottom="5dp"
+       android:background="@drawable/bind_gateway_selector">
+       <ImageView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/id_add_scene_img"
+           android:src="@drawable/icon_adds"/>
+       <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="@color/stone_gray_10"
+           android:text="@string/room_add"
+           />
+   </LinearLayout>
+   
+    <GridView 
+        android:id="@+id/id_room_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="10dp"
+        android:columnWidth="80dp"
+        android:horizontalSpacing="10dp"
+        android:paddingTop="10dp">
+        
+    </GridView>
+
+</LinearLayout>

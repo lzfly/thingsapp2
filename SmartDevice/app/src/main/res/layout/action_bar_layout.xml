@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:gravity="center_vertical"
+    android:background="@color/main_dark_turquoise_bg">
+    
+    <ImageView
+        android:id="@+id/id_actionbar_icon" 
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingRight="15dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/actionbar_back_ripple"
+        android:src="@drawable/icon_back"
+        />
+    
+    <TextView 
+        android:id="@+id/id_actionbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="@string/unknown_str"
+        android:layout_centerHorizontal="true"
+        />
+    
+    <ImageView 
+        android:id="@+id/id_actionbar_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/id_actionbar_menu_tx"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:paddingRight="10dp"
+        android:text="@string/unknown_str"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

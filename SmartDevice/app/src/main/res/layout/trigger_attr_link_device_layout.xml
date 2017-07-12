@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+    <TextView android:id="@+id/id_trigger_attr_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textSize="16sp"
+        android:paddingLeft="5dp"
+        android:text="@string/unknown_str"/>
+    
+    <TextView android:id="@+id/id_trigger_attr_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_toRightOf="@id/id_trigger_attr_name"
+        android:layout_centerVertical="true"
+        android:gravity="bottom"
+        android:text="@string/unknown_str"
+        android:textColor="@color/light_gray_20"
+        />
+    
+    <ImageView android:id="@+id/id_trigger_attr_add"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/img_button_selector2"
+        android:src="@drawable/icon_link_pre_add"/>
+
+</RelativeLayout>

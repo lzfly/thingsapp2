@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+   
+   <RelativeLayout 
+       android:id="@+id/id_bind_gateway"
+       android:layout_width="match_parent"
+       android:layout_height="60dp"
+       android:gravity="center"
+       android:background="@drawable/bind_gateway_selector">
+       <ImageView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+           android:id="@+id/id_bind_img_view"
+           android:src="@drawable/icon_adds"/>
+       <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@id/id_bind_img_view"
+           android:layout_centerVertical="true"
+           android:textColor="@color/stone_gray_10"
+           android:text="@string/binding_gateway"
+           android:paddingLeft="10dp"
+           />
+   </RelativeLayout> 
+   
+   <!-- 
+   <View style="@style/linear_diver_style"/>
+    -->
+   
+   <TextView 
+       android:layout_width="match_parent"
+       android:layout_height="40dp"
+       android:paddingLeft="10dp"
+       android:textColor="@color/teal_500"
+       android:background="@color/white"
+       android:gravity="center_vertical"
+       android:text="@string/binded_gateway"/>
+    
+   <ListView 
+       android:id="@+id/id_binded_gateway_list"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:divider="#00000000" 
+       android:dividerHeight="0dp"
+       android:clickable="false">
+       
+   </ListView>
+    
+</LinearLayout>

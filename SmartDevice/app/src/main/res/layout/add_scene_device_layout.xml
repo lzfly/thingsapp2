@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/light_gray_20"
+        android:background="@color/light_gray_green"
+        android:textSize="15sp"
+        android:padding="2dp"
+        android:text="@string/choose_scene_add_device"/>
+    <ListView 
+        android:id="@+id/id_add_scene_device_choose"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+    </ListView>
+    <TextView
+        android:id="@+id/id_add_scene_add_device"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_margin="5dp"
+        android:background="@drawable/add_scene_device_button_selector"
+        android:text="@string/scene_add_device_add" />
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/light_gray_20"
+         android:background="@color/light_gray_green"
+        android:textSize="15sp"
+        android:padding="2dp"
+        android:text="@string/choosed_scene_add_device"/>
+    <ListView 
+        android:id="@+id/id_add_scene_device_choosed"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:layout_height="match_parent"></ListView>
+</LinearLayout>

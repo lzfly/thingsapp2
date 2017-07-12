@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<ScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout 
+        android:id="@+id/id_link_device_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:background="@color/cyan_white">
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_link"/>
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:textColor="@color/light_gray_20"
+        android:text="@string/link_device_desc"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_below="@id/id_link_device_description">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="18sp"
+            android:text="@string/link_device_example"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:drawableTop="@drawable/icon_body_infare"
+            android:textColor="@color/light_gray_20"
+            android:textSize="12sp"
+            android:text="@string/link_device_example_infare"/>
+        <View 
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/black"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/red"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="@string/link_device_example_alarm"
+            android:drawableLeft="@drawable/icon_bell_alarm"/>
+        
+        <View 
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/black"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/light_gray_20"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="@string/link_device_example_trigger"/>
+        
+        <View 
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/black"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/light_gray_20"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="@string/link_device_example_light"
+            android:drawableTop="@drawable/icon_light"/>
+        
+        <View 
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/black"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/red"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="@string/link_device_example_light_on"
+            android:drawableLeft="@drawable/icon_light_on"/>
+        <View android:layout_width="match_parent"
+              android:layout_height="80dp"/>
+    </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
+<TextView 
+    android:id="@+id/id_link_device_add_button"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_gravity="bottom"
+    android:gravity="center"
+    android:textSize="16sp"
+    android:background="@drawable/img_button_retangle_selector"
+    android:textColor="@color/white"
+    android:text="@string/link_device_create"/>
+</FrameLayout>

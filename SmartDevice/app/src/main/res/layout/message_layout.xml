@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:orientation="horizontal" >
+    <ImageView
+           android:id="@+id/id_message_icon" 
+           android:layout_width="wrap_content"
+           android:layout_height="40dp"
+           android:paddingLeft="10dp"
+           android:paddingRight="10dp"
+           android:layout_gravity="center"
+           android:src="@drawable/icon_bullet_red"/>
+      
+   <RelativeLayout 
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center">
+        <TextView 
+           android:id="@+id/id_message_title" 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentTop="true"
+           android:textSize="16sp"
+           android:text="@string/unknown_str"/>
+        <RelativeLayout 
+            android:id="@+id/id_message_titime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:layout_below="@id/id_message_title">
+
+            <TextView
+                android:id="@+id/id_message_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textColor="@android:color/darker_gray"
+                android:text="@string/unknown_str" />
+
+            <TextView
+                android:id="@+id/id_message_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/unknown_str"
+                android:paddingRight="10dp"
+                android:textColor="@android:color/darker_gray" />
+
+        </RelativeLayout>
+        
+       <TextView 
+           android:id="@+id/id_message_content" 
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/id_message_titime"
+           android:maxLines="2"
+           android:ellipsize="end"
+           android:paddingTop="5dp"
+           android:text="@string/unknown_str"/>
+   </RelativeLayout>
+   
+</LinearLayout>

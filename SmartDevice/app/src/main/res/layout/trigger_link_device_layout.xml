@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.smartdevice.ui.HorizontalListView
+       android:id="@+id/id_trigger_device_list"
+       android:layout_width="match_parent"
+       android:layout_height="90dp"
+       android:layout_gravity="center_vertical"
+       android:background="@color/white"/>
+    <TextView 
+        android:id="@+id/id_trigger_device_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/stone_gray_10"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="@string/unchoosed_str"/>
+    
+    <ListView 
+        android:id="@+id/id_trigger_device_attr_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        
+    </ListView>
+</LinearLayout>
+

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+   <RelativeLayout 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       android:background="@color/light_gray_green">
+       <ImageView 
+       android:id="@+id/id_devinfo_icon"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:padding="5dp"
+       android:src="@drawable/icon_light"/>
+       <TextView 
+           android:id="@+id/id_deviceinfo_type"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+           android:layout_toRightOf="@id/id_devinfo_icon"
+           android:text="@string/unknown_str"/>
+   </RelativeLayout>
+   
+   <com.smartdevice.ui.CustLinearView
+        android:id="@+id/id_devinfo_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        custom:titleTxt="@string/device_name"
+        custom:indicatorVisible="VISIBLE"
+        custom:contentVisible="VISIBLE"
+        custom:indicator="@drawable/icon_edit">
+    </com.smartdevice.ui.CustLinearView>
+
+ <!-- 
+   <TextView 
+       android:id="@+id/id_devinfo_name"
+       android:layout_width="match_parent"
+       android:layout_height="40dp"
+       android:background="@color/white"
+       android:paddingLeft="10dp"
+       android:gravity="left|center_vertical"
+      />
+   -->
+   
+   <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="40dp"
+       android:paddingLeft="10dp"
+       android:background="@color/white"
+       android:orientation="horizontal">
+       <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_vertical"
+           android:text="@string/device_sn"/>
+       <TextView 
+           android:id="@+id/id_deviceinfo_sn"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_vertical"
+           android:paddingLeft="10dp"
+           android:textColor="@color/light_gray_20"
+           android:text="@string/unknown_str"/>
+   </LinearLayout>
+   <TextView 
+       android:layout_width="match_parent"
+       android:layout_height="10dp"
+      />
+   <LinearLayout
+       android:id="@+id/id_devinfo_attr"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:background="@color/white">
+       
+   </LinearLayout>
+   
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" 
+    android:id="@+id/id_cust_linear_layout_view">
+    
+    <RelativeLayout 
+        android:id="@+id/id_cust_info_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/info_item_selector">
+     <ImageView 
+        android:id="@+id/id_cust_icon_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="5dp"
+        android:src="@drawable/icon_unknown"/>
+    
+    <TextView 
+        android:id="@+id/id_cust_title_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:layout_toRightOf="@id/id_cust_icon_view"
+        android:layout_centerVertical="true"
+        android:textColor="@color/black"
+        android:text="@string/unknown_str"/>
+    
+    <TextView 
+        android:id="@+id/id_cust_content_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:layout_toRightOf="@id/id_cust_title_view"
+        android:layout_centerVertical="true"
+        android:textColor="@color/black"
+        android:text="@string/unknown_str"/>
+    
+    <ImageView 
+        android:id="@+id/id_cust_indicator_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingRight="5dp" 
+        android:src="@drawable/icon_indicator"/>
+    </RelativeLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/light_gray_10"
+        android:layout_gravity="bottom"/>
+</LinearLayout>

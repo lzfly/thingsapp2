@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/id_created_link_device_info_attr_ly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/created_link_device_attr_shape"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="@string/link_device_trigger"
+                    android:textSize="30sp"
+                    android:textColor="@color/stone_gray_10"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/id_created_link_device_info_if"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:src="@drawable/icon_unknow_device" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="@string/link_device_action"
+                    android:textSize="30sp"
+                    android:textColor="@color/stone_gray_10"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/id_created_link_device_info_then"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:src="@drawable/icon_unknow_device" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/id_created_link_device_info_turn_on"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:src="@drawable/icon_switch_off" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/id_created_link_device_info_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/main_turquoise_bg"
+            android:text="@string/unknown_str" />
+    </LinearLayout>
+
+</LinearLayout>

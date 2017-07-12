@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:background="@color/cyan_blue"
+    android:orientation="vertical">
+       
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="18sp"
+            android:text="@string/register_new_user"/>
+                    
+            <EditText 
+                android:id="@+id/id_register_username"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="5dp"
+                android:maxLines="1"
+                style="@style/edit_text_style"
+                android:hint="@string/user_name"
+            />
+        
+        <View android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+        
+           
+            <EditText 
+                android:id="@+id/id_register_password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="5dp"
+            style="@style/edit_text_style"
+            android:hint="@string/password"
+            android:inputType="textPassword"/>
+            
+            <EditText 
+                android:id="@+id/id_register_password_ensure"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="30dp"
+            style="@style/edit_text_style"
+            android:hint="@string/register_ensure_password"
+            android:inputType="textPassword"/>
+        
+        <TextView 
+            android:id="@+id/id_register_button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            style="@style/login_button_style"
+            android:text="@string/user_register"/>
+        <TextView 
+            android:id="@+id/id_register_back"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            style="@style/login_button_style"
+            android:text="@string/register_back"/>
+        <TextView android:id="@+id/id_register_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:visibility="gone"
+                android:text="@string/unknown_str"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/red"
+                />
+</LinearLayout>

@@ -1,0 +1,131 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+        <!--  
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:actionBarStyle">@style/cust_action_bar_style</item>
+    </style>
+    
+    <style name="cust_action_bar_style" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/extra_plate_img_bg</item>
+        <item name="android:windowBackground">@android:color/white</item> 
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    
+    <style name="Theme.AppCompat.Light.NoActionBar" parent="@style/Theme.AppCompat.Light">  
+        <item name="android:windowNoTitle">true</item>  
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+        
+    <style name="LinearLayoutStyle">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    
+    <style name="PlatesStyle">
+        <item name="android:orientation">horizontal</item>
+    </style>
+    
+    <style name="Linear_PlatesStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+    
+    <style name="ImagePlateStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:background">@drawable/main_plate_selector</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:clickable">true</item>
+    </style>
+    
+    <style name="bottom_navigation_style">
+        <item name="android:padding">4dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    
+    <style name="extra_layout_style" parent="LinearLayoutStyle">
+        
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="extra_plates_layout_style" parent="extra_layout_style">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/extra_plate_boder_shape</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:layout_marginLeft"> 10dp</item>
+        <item name="android:layout_marginRight"> 10dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom"> 10dp</item>
+        
+    </style>
+    
+    <style name="extra_plate_img_style">
+        <item name="android:paddingLeft">2.5dp</item>
+        <item name="android:paddingRight">2.5dp</item>
+        <item name="android:background">@drawable/extra_plate_img_boder_shope</item>
+    </style>
+    
+    <style name="device_manage_menu_style">
+        <item name="android:background">@drawable/device_mange_menu_shape</item>
+    </style>
+    
+    <style name="home_view_pager_style">
+        <item name="android:padding">5dp</item>
+    </style>
+    <style name="NoActionBar">
+      <item name="android:windowActionBar">false</item>
+      <item name="android:windowNoTitle">true</item>
+    </style>
+    
+    <style name="main_add_dev_style">
+        <item name="android:background">@drawable/main_dev_add_selector</item>
+    </style>
+    
+    <style name="edit_text_style">
+        <item name="android:background">@drawable/oval_corners_shape</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    
+    <style name="img_button_style">
+        <item name="android:background">@drawable/img_button_selector</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <style name="login_button_style">
+        <item name="android:background">@drawable/login_button_selector</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <style name="linear_diver_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/light_gray_10</item>
+    </style>
+</resources>

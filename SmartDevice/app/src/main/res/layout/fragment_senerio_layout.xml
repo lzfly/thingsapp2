@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <LinearLayout 
+       android:id="@+id/id_add_scene"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       android:orientation="vertical"
+       android:paddingTop="5dp"
+       android:paddingBottom="5dp"
+       android:background="@drawable/bind_gateway_selector">
+       <ImageView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/id_add_scene_img"
+           android:src="@drawable/icon_adds"/>
+       <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="@color/stone_gray_10"
+           android:text="@string/scene_add"
+           />
+   </LinearLayout> 
+   <!-- 
+   <ListView 
+       android:id="@+id/id_groups"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/id_add_scene"
+       android:background="@color/white">
+   </ListView>
+    -->
+    <com.smartdevice.ui.SwipeListView
+       android:id="@+id/id_groups"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/id_add_scene"
+       android:background="@color/white">
+        
+    </com.smartdevice.ui.SwipeListView>
+  
+</RelativeLayout>

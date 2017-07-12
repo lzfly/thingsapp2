@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <color name="plates_bg">#B2DFDB</color>
+    <color name="turquoise">#40E0D0</color><!--青绿色 -->  
+    
+    <color name="teal_500">#009688</color>
+    <color name="teal_50">#E0F2F1</color>
+    <color name="teal_100">#B2DFDB</color>
+    <color name="teal_200">#80CBC4</color>
+    
+    <color name="turquoise_bg">#67bf95</color>
+    <color name="turquoise_dark_bg">#047b5f</color>
+    <color name="navigation_bar_bg">#1fbba6</color>
+    
+    <color name="light_gray_white">#f3f3f3</color>
+    <color name="light_gray">#e3e4e5</color>
+    <color name="light_gray_10">#dcddde</color>
+    <color name="light_gray_20">#acadad</color>
+    <color name="extra_plates_bg">#1fbba6</color>
+    <color name="extra_plate_img_bg">#1ba18f</color>
+    <color name="main_turquoise_bg">#1fbba6</color>
+    <color name="main_dark_turquoise_bg">#1ba18f</color>
+    
+    <color name="white">#ffffffff</color>
+    <color name="mist_white">#f5f5f5</color>
+    
+    <color name="black">#000000</color>
+    <color name="dark_gray">#9fa7b4</color>
+    <color name="dark_blue">#31647f</color>
+    <color name="light_blue">#55b1e2</color>
+    
+    <color name="cyan_white">#f3ffcc</color>
+    <color name="cyan_10">#a4c739</color>
+    <color name="cyan">#86c440</color>
+    
+    <color name="cyan_blue">#86d2c6</color>
+    
+    <color name="blue_white">#ccf2ff</color>
+    <color name="blue_white_10">#78dbff</color>
+    <color name="blue_white_20">#33ccff</color>
+    
+    <color name="red_0">#FF0000</color>
+    <color name="red">#ff4400</color>
+    <color name="red_10">#e53d00</color>
+    
+    <color name="orange">#f37936</color>
+    <color name="orange_10">#e06f31</color>
+    
+    <color name="stone_gray">#778899</color> <!-- 石板灰 -->
+    <color name="stone_gray_10">#708090</color> <!-- 石板灰 -->
+    
+    <color name="light_gray_green">#E0EEEE</color>
+    <color name="light_gray_green_10">#B0E0E6</color>
+    
+    <color name="half_transparent">#b0000000</color>
+
+  <color name="contents_text">#ff000000</color>
+  <color name="encode_view">#ffffffff</color>
+  <color name="help_button_view">#ffcccccc</color>
+  <color name="help_view">#ff404040</color>
+  <color name="possible_result_points">#c0ffff00</color>  
+  <color name="result_image_border">#ffffffff</color>
+  <color name="result_minor_text">#ffc0c0c0</color>
+  <color name="result_points">#c000ff00</color>
+  <color name="result_text">#ffffffff</color>
+  <color name="result_view">#b0000000</color>
+  <color name="sbc_header_text">#ff808080</color>
+  <color name="sbc_header_view">#ffffffff</color>
+  <color name="sbc_list_item">#fffff0e0</color>
+  <color name="sbc_layout_view">#ffffffff</color>
+  <color name="sbc_page_number_text">#ff000000</color>
+  <color name="sbc_snippet_text">#ff4b4b4b</color>
+  <color name="share_text">#ff000000</color>
+  <color name="share_view">#ffffffff</color>
+  <color name="status_view">#50000000</color>
+  <color name="status_text">#ffffffff</color>
+  <color name="transparent">#00000000</color>
+  <color name="viewfinder_frame">#ff000000</color>
+  <color name="viewfinder_laser">#ffff0000</color>
+  <color name="viewfinder_mask">#60000000</color>
+  <color name="item_normal">#F1F1F1</color>
+  <color name="item_pressed">#4080F0</color>
+  <color name="font_color_black">#222222</color>
+  <color name="font_color_white">#FFFFFF</color>
+  <color name="background_gray">#BBBBBB</color>
+  <color name="font_color_red">#f91717</color>
+  <color name="font_color_green">#00FF00</color>
+    
+</resources>
